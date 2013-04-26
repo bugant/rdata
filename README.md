@@ -2,10 +2,11 @@
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/samdunne/rdata)
 [![Build Status](https://secure.travis-ci.org/samdunne/rdata.png?branch=master)](https://travis-ci.org/samdunne/rdata)
 [![Dependency Status](https://gemnasium.com/samdunne/rdata.png)](https://gemnasium.com/samdunne/rdata)
+[![Coverage Status](https://coveralls.io/repos/samdunne/rdata/badge.png?branch=master)](https://coveralls.io/r/samdunne/rdata)
 
 ## Purpose
 
-Project goal is to provide a very clear and concise library of datastructures and algorithms in Ruby. 
+Project goal is to provide a very clear and concise library of datastructures and algorithms in Ruby.
 
 ## Data Structures
 
