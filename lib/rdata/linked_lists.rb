@@ -60,6 +60,10 @@ module RData
       end
     end
 
+    class DoubleLinkedList
+
+    end
+
     class Node
       attr_accessor :value, :next
 

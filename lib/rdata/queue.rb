@@ -1,5 +1,7 @@
+#
+
 module RData
-    
+
     class Queue
 
         def initialize
@@ -21,7 +23,7 @@ module RData
               @head = (@head == @length) ? 1 : @head + 1
               return x
             end
-        end        
+        end
 
         def peek
           return @queue[@head]
