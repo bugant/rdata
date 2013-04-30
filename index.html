@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Rdata by samdunne</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Rdata</h1>
+        <h2>Datastructures in Ruby</h2>
+        <a href="https://github.com/samdunne/rdata" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>RData</h1>
+
+<p><a href="https://codeclimate.com/github/samdunne/rdata"><img src="https://codeclimate.com/badge.png" alt="Code Climate"></a>
+<a href="https://travis-ci.org/samdunne/rdata"><img src="https://secure.travis-ci.org/samdunne/rdata.png?branch=master" alt="Build Status"></a>
+<a href="https://gemnasium.com/samdunne/rdata"><img src="https://gemnasium.com/samdunne/rdata.png" alt="Dependency Status"></a>
+<a href="https://coveralls.io/r/samdunne/rdata"><img src="https://coveralls.io/repos/samdunne/rdata/badge.png?branch=master" alt="Coverage Status"></a></p>
+
+<h2>Purpose</h2>
+
+<p>Project goal is to provide a very clear and concise library of datastructures and algorithms in Ruby.</p>
+
+<h2>Data Structures</h2>
+
+<ul>
+<li><a href="#stacks">Stacks</a></li>
+<li><a href="#queues">Queue</a></li>
+</ul><h2>Installation</h2>
+
+<div class="highlight"><pre><span class="n">gem</span> <span class="n">install</span> <span class="n">rdata</span>
+</pre></div>
+
+<p>Or in a Gemfile</p>
+
+<div class="highlight"><pre><span class="n">gem</span> <span class="s1">'rdata'</span>
+</pre></div>
+
+<h2>Usage</h2>
+
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'rdata'</span>
+</pre></div>
+
+<h2><a name="stacks">Stacks</a></h2>
+
+<h3>Initialization</h3>
+
+<div class="highlight"><pre><span class="vi">@stack</span> <span class="o">=</span> <span class="ss">RData</span><span class="p">:</span><span class="ss">:Stack</span><span class="o">.</span><span class="n">new</span>
+</pre></div>
+
+<h3>Operations</h3>
+
+<div class="highlight"><pre><span class="vi">@stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>      <span class="c1"># =&gt; Returns 'x'</span>
+<span class="vi">@stack</span><span class="o">.</span><span class="n">pop</span>          <span class="c1"># =&gt; Returns 'top'</span>
+<span class="vi">@stack</span><span class="o">.</span><span class="n">top</span>          <span class="c1"># =&gt; Returns 'top'</span>
+<span class="vi">@stack</span><span class="o">.</span><span class="n">is_empty?</span>    <span class="c1"># =&gt; Returns true/false</span>
+</pre></div>
+
+<h3>More on Stacks</h3>
+
+<p><a href="https://github.com/samdunne/rdata/wiki/Stacks">Stacks - Wiki Link</a></p>
+
+<h2><a name="queues">Queues</a></h2>
+
+<h3>Initialization</h3>
+
+<div class="highlight"><pre><span class="vi">@queue</span> <span class="o">=</span> <span class="ss">RData</span><span class="p">:</span><span class="ss">:Queue</span><span class="o">.</span><span class="n">new</span>
+</pre></div>
+
+<h3>Operations</h3>
+
+<div class="highlight"><pre><span class="vi">@queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>   <span class="c1"># =&gt; Returns '9'</span>
+<span class="vi">@queue</span><span class="o">.</span><span class="n">dequeue</span>          <span class="c1"># =&gt; Returns 'head'</span>
+<span class="vi">@queue</span><span class="o">.</span><span class="n">peek</span>                 <span class="c1"># =&gt; Returns 'head' without removing it</span>
+<span class="vi">@queue</span><span class="o">.</span><span class="n">is_empty?</span>        <span class="c1"># =&gt; Returns true/false</span>
+</pre></div>
+
+<h3>More on Queues</h3>
+
+<p>Coming Soon...</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/samdunne/rdata/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/samdunne/rdata/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/samdunne/rdata"></a> is maintained by <a href="https://github.com/samdunne">samdunne</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
