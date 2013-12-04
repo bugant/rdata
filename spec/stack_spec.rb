@@ -7,7 +7,7 @@ describe RData::Stack do
   context "An empty stack" do
 
     it "should be empty" do
-      stack.is_empty?.should eql("true")
+      stack.empty?.should eql(true)
     end
 
     it "should push an element" do
@@ -29,7 +29,7 @@ describe RData::Stack do
     end
 
     it "should not be empty" do
-      stack.is_empty?.should eql("false")
+      stack.empty?.should eql(false)
     end
 
     it "should reveal the top element" do
