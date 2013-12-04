@@ -7,7 +7,7 @@ describe RData::Queue do
   context "An empty queue" do
 
     it "should be empty" do
-      queue.is_empty?.should eql("true")
+      queue.empty?.should eql(true)
     end
 
     it "should enqueue an element" do
@@ -29,7 +29,7 @@ describe RData::Queue do
     end
 
     it "should not be empty" do
-      queue.is_empty?.should eql("false")
+      queue.empty?.should eql(false)
     end
 
     it "should reveal the first element" do
